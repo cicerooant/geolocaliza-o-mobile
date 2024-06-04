@@ -1,11 +1,3 @@
-// useState: é um hook utilizado para gerenciar o estado em componentes funcionais
-// do React.Ele permite que você adicione estado local a um componente, permitindo
-// que o componente mantenha e atualize dinamicamente dados ao longo do tempo.
-
-// useEffect: é um hook que permite realizar efeitos colaterais em componentes
-// funcionais.Efeitos colaterais podem incluir, por exemplo, buscar dados de uma API,
-// atualizar o DOM, ou inscrever / desinscrever eventos.
-
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, Button, Alert, StyleSheet } from 'react-native';
 import * as Location from 'expo-location';
@@ -53,25 +45,27 @@ const App = () => {
   };
 
   return (
-    <View>
-      <Text style={{ fontSize: 20, textAlign: 'center', marginTop: 20 }}>
+    <View style={styles.container}>
+      <Text style={styles.title}>
         Busca de Filmes
       </Text>
       <TextInput
-        style={{ borderWidth: 1, margin: 10, padding: 8 }}
+        style={styles.input}
         placeholder="Digite o nome do filme"
         value={movieTitle}
         onChangeText={(text) => setMovieTitle(text)}
       />
-      <Button title="Buscar Filme" onPress={handleSearch} />
+      <View style={styles.buttonContainer}>
+        <Button title="Buscar Filme" onPress={handleSearch} color="#007BFF" />
+      </View>
 
       {location && (
-        <View>
-          <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Sua Localização</Text>
+        <View style={styles.locationContainer}>
+          <Text style={styles.locationTitle}>Sua Localização</Text>
           <Text>Latitude: {location.coords.latitude}</Text>
           <Text>Longitude: {location.coords.longitude}</Text>
           <MapView
-            style={{ width: '100%', height: 200 }}
+            style={styles.map}
             initialRegion={{
               latitude: location.coords.latitude,
               longitude: location.coords.longitude,
@@ -91,8 +85,8 @@ const App = () => {
       )}
 
       {movieData && (
-        <View style={{ margin: 20 }}>
-          <Text style={{ fontSize: 18, fontWeight: 'bold' }}>{movieData.Title}</Text>
+        <View style={styles.movieContainer}>
+          <Text style={styles.movieTitle}>{movieData.Title}</Text>
           <Text>Ano: {movieData.Year}</Text>
           <Text>Gênero: {movieData.Genre}</Text>
           <Text>Diretor: {movieData.Director}</Text>
@@ -100,7 +94,9 @@ const App = () => {
         </View>
       )}
     </View>
-  ); };
+  );
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
