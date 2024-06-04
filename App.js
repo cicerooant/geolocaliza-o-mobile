@@ -102,6 +102,8 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: '#f5f5f5',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   title: {
     fontSize: 24,
@@ -110,6 +112,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   input: {
+    width: '100%',
     borderWidth: 1,
     borderColor: '#ddd',
     borderRadius: 5,
@@ -118,6 +121,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   buttonContainer: {
+    width: '100%',
     marginVertical: 10,
     borderRadius: 5,
     overflow: 'hidden',
@@ -132,6 +136,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 2,
+    alignItems: 'center',
   },
   locationTitle: {
     fontSize: 18,
@@ -154,6 +159,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 2,
+    alignItems: 'center',
   },
   movieTitle: {
     fontSize: 20,
