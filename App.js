@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#E5E5E5',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -114,11 +114,11 @@ const styles = StyleSheet.create({
   input: {
     width: '100%',
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: '#C0C0C0',
     borderRadius: 5,
     padding: 10,
     marginVertical: 10,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFF',
   },
   buttonContainer: {
     width: '100%',
@@ -129,8 +129,8 @@ const styles = StyleSheet.create({
   locationContainer: {
     marginTop: 20,
     padding: 15,
-    backgroundColor: '#fff',
-    borderRadius: 5,
+    backgroundColor: '#FFF',
+    borderRadius: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
@@ -142,18 +142,19 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 5,
+    color: '#333',
   },
   map: {
     width: '100%',
     height: 200,
     marginTop: 10,
-    borderRadius: 5,
+    borderRadius: 10,
   },
   movieContainer: {
     marginTop: 20,
     padding: 15,
-    backgroundColor: '#fff',
-    borderRadius: 5,
+    backgroundColor: '#FFF',
+    borderRadius: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
@@ -165,6 +166,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 5,
+    color: '#333',
   },
 });
 
