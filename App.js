@@ -56,7 +56,7 @@ const App = () => {
         onChangeText={(text) => setMovieTitle(text)}
       />
       <View style={styles.buttonContainer}>
-        <Button title="Buscar Filme" onPress={handleSearch} color="#007BFF" />
+        <Button title="Buscar Filme" onPress={handleSearch} color="#6A1B9A" />
       </View>
 
       {location && (
@@ -101,27 +101,23 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#E5E5E5',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#E0F7FA', // Fundo azul claro
   },
   title: {
     fontSize: 24,
     textAlign: 'center',
     marginVertical: 20,
-    color: '#333',
+    color: '#004D40', // Texto verde escuro
   },
   input: {
-    width: '100%',
     borderWidth: 1,
-    borderColor: '#C0C0C0',
+    borderColor: '#004D40', // Borda verde escuro
     borderRadius: 5,
     padding: 10,
     marginVertical: 10,
-    backgroundColor: '#FFF',
+    backgroundColor: '#FFFFFF', // Fundo branco
   },
   buttonContainer: {
-    width: '100%',
     marginVertical: 10,
     borderRadius: 5,
     overflow: 'hidden',
@@ -129,44 +125,42 @@ const styles = StyleSheet.create({
   locationContainer: {
     marginTop: 20,
     padding: 15,
-    backgroundColor: '#FFF',
-    borderRadius: 10,
+    backgroundColor: '#FFFFFF', // Fundo branco
+    borderRadius: 5,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 2,
-    alignItems: 'center',
   },
   locationTitle: {
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 5,
-    color: '#333',
+    color: '#004D40', // Texto verde escuro
   },
   map: {
     width: '100%',
     height: 200,
     marginTop: 10,
-    borderRadius: 10,
+    borderRadius: 5,
   },
   movieContainer: {
     marginTop: 20,
     padding: 15,
-    backgroundColor: '#FFF',
-    borderRadius: 10,
+    backgroundColor: '#FFFFFF', // Fundo branco
+    borderRadius: 5,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 2,
-    alignItems: 'center',
   },
   movieTitle: {
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 5,
-    color: '#333',
+    color: '#004D40', // Texto verde escuro
   },
 });
 
