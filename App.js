@@ -119,18 +119,34 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 10,
     marginVertical: 10,
+    backgroundColor: '#fff',
+  },
+  buttonContainer: {
+    marginVertical: 10,
+    borderRadius: 5,
+    overflow: 'hidden',
   },
   locationContainer: {
     marginTop: 20,
+    padding: 15,
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 2,
   },
   locationTitle: {
     fontSize: 18,
     fontWeight: 'bold',
+    marginBottom: 5,
   },
   map: {
     width: '100%',
     height: 200,
     marginTop: 10,
+    borderRadius: 5,
   },
   movieContainer: {
     marginTop: 20,
@@ -139,13 +155,14 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
+    shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 2,
   },
   movieTitle: {
     fontSize: 20,
     fontWeight: 'bold',
+    marginBottom: 5,
   },
 });
 
